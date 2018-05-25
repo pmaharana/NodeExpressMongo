@@ -1,0 +1,17 @@
+body {
+  background: #abbaab; 
+  background: -webkit-linear-gradient(to right, #ffffff, #abbaab);  
+  background: linear-gradient(to right, #ffffff, #abbaab); 
+}
+
+.thumbnail img {
+  width: 100%;
+}
+
+.thumbnail {
+  padding: 0;
+}
+
+.thumbnail .caption-full {
+  padding: 9px;
+}
