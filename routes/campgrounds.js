@@ -6,7 +6,7 @@ const express    = require('express'),
 router.get('/', function(req, res) {
   Campground.find({}, function(error, campgrounds) {
     if (error) {
-      console.log('lol @ u');    
+      req.flash('error', 'Could not load data, please contact the help team!');    
     } else {
       res.render('campgrounds/index', {campgrounds: campgrounds});
     }
